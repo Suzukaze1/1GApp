@@ -2,5 +2,7 @@
     <string name="app_name">Aplikasi1</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="text_login">Login</string>
+    <string name="text_login">Masuk</string>
+    <string name="tab_text_1">Daftar</string>
+    <string name="tab_text_2">Masuk</string>
 </resources>
