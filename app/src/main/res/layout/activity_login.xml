@@ -5,19 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout"
+    
+    <FrameLayout
+        android:id="@+id/frame_layout01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabRippleColor="#8965CE"
-        app:tabIndicatorColor="#8965CE"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:clipToPadding="false">
+
+        <View
+            android:id="@+id/indicator"
+            android:layout_width="0dp"
+            android:layout_height="51dp"
+            android:background="@drawable/gradient_bg"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@drawable/tab_bg"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabIndicatorColor="@null"
+            app:tabRippleColor="@null"/>
+
+    </FrameLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tab_layout"/>
+        android:layout_below="@+id/frame_layout01"/>
 
 </RelativeLayout>
