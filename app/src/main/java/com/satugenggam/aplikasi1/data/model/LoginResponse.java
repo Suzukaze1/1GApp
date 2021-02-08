@@ -14,7 +14,7 @@ public class LoginResponse{
 	private int expiresIn;
 
 	@SerializedName("user")
-	private User user;
+	private UserLoginResponse userLoginResponse;
 
 	public String getAccessToken(){
 		return accessToken;
@@ -28,7 +28,7 @@ public class LoginResponse{
 		return expiresIn;
 	}
 
-	public User getUser(){
-		return user;
+	public UserLoginResponse getUserLoginResponse(){
+		return userLoginResponse;
 	}
 }
