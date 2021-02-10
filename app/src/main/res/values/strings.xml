@@ -9,4 +9,7 @@
     <string name="email">Email</string>
     <string name="konfirmasi_password">Konfirmasi Password</string>
     <string name="masuk">Masuk</string>
+    <string name="shop_name">Santuylah Shop</string>
+    <string name="lorem_ipsum">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an</string>
+    <string name="sosial_media">Sosial Media</string>
 </resources>
