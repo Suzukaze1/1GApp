@@ -32,7 +32,8 @@
             android:layout_marginLeft="20dp"
             android:paddingTop="10dp"
             android:inputType="textEmailAddress"
-            android:hint="    Email"
+            android:paddingLeft="20dp"
+            android:hint="@string/email"
             android:background="@drawable/edit_text_bg"
             android:paddingBottom="10dp"
             android:layout_width="match_parent"
@@ -59,7 +60,8 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/edit_text_bg"
             android:inputType="textPassword"
-            android:hint="    Password"
+            android:paddingLeft="20dp"
+            android:hint="@string/password"
             android:paddingTop="10dp"
             android:paddingBottom="10dp" />
 
