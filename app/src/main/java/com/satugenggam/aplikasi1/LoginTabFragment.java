@@ -18,6 +18,8 @@ import androidx.lifecycle.ViewModelProvider;
 import com.satugenggam.aplikasi1.data.model.LoginResponse;
 import com.satugenggam.aplikasi1.ui.viewmodel.LoginViewModel;
 
+import java.util.Objects;
+
 public class LoginTabFragment extends Fragment {
 
     private LoginViewModel loginViewModel;
@@ -76,7 +78,7 @@ public class LoginTabFragment extends Fragment {
     }
 
     private void setupLogin(String email, String password) {
-        loginViewModel.setLoginData(email, password, "1");
+        loginViewModel.setLoginData(email, password, "1", Objects.requireNonNull(getContext()));
     }
 
     private void setupViewModel() {
