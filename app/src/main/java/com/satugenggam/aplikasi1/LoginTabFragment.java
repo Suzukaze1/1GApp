@@ -15,7 +15,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.satugenggam.aplikasi1.data.model.LoginResponse;
 import com.satugenggam.aplikasi1.ui.viewmodel.LoginViewModel;
 
 import java.util.Objects;
