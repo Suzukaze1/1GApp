@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.google.android.material.textfield.TextInputLayout;
 import com.satugenggam.aplikasi1.ui.viewmodel.RegisterViewModel;
 
 import java.util.Objects;
@@ -22,6 +23,7 @@ public class RegisterTabFragment extends Fragment {
 
     RegisterViewModel registerViewModel;
     EditText namalengkap,email,password,konfirmasi_password;
+    TextInputLayout til01,til02,til03,til04;
     Button btndaftar;
     ImageView iv02;
 
@@ -37,6 +39,10 @@ public class RegisterTabFragment extends Fragment {
         konfirmasi_password = root.findViewById(R.id.register_verification_pass);
         iv02 = root.findViewById(R.id.iv_register);
         btndaftar = root.findViewById(R.id.btn_register);
+        til01 = root.findViewById(R.id.til01);
+        til02 = root.findViewById(R.id.til02);
+        til03 = root.findViewById(R.id.til03);
+        til04 = root.findViewById(R.id.til04);
 
         namalengkap.setTranslationY(300);
         email.setTranslationY(300);
@@ -44,15 +50,27 @@ public class RegisterTabFragment extends Fragment {
         konfirmasi_password.setTranslationY(300);
         iv02.setTranslationY(300);
         btndaftar.setTranslationY(300);
+        til01.setTranslationY(300);
+        til02.setTranslationY(300);
+        til03.setTranslationY(300);
+        til04.setTranslationY(300);
 
         namalengkap.setAlpha(0);
         email.setAlpha(0);
         password.setAlpha(0);
         konfirmasi_password.setAlpha(0);
         btndaftar.setAlpha(0);
+        til01.setAlpha(0);
+        til02.setAlpha(0);
+        til03.setAlpha(0);
+        til04.setAlpha(0);
 
         iv02.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(300).start();
         namalengkap.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(400).start();
+        til01.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(400).start();
+        til02.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(400).start();
+        til03.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(400).start();
+        til04.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(400).start();
         email.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(400).start();
         password.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(400).start();
         konfirmasi_password.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(400).start();

@@ -29,7 +29,7 @@
 
         <EditText
             android:id="@+id/login_email"
-            android:background="@drawable/edit_text_bg"
+
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:paddingTop="10dp"
