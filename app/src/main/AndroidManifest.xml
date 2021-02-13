@@ -12,9 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.viewmodel.view.profil.ShopChangePasswordActivity"/>
+        <activity android:name=".ui.viewmodel.view.order.OrderActivity"></activity>
+        <activity android:name=".ui.viewmodel.view.profil.ShopChangePasswordActivity" />
         <activity android:name=".ui.viewmodel.view.profil.ShopEditActivity" />
-        <activity android:name=".ui.viewmodel.view.profil.ShopProfileActivity" >
+        <activity android:name=".ui.viewmodel.view.profil.ShopProfileActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,9 +24,7 @@
         </activity>
         <activity android:name=".ui.viewmodel.view.dashboard.DashboardActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity">
-
-        </activity>
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>
