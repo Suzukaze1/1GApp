@@ -1,4 +1,4 @@
-package com.satugenggam.aplikasi1.ui.viewmodel.view.profil;
+package com.satugenggam.aplikasi1.ui.view.profil;
 
 import androidx.appcompat.app.AppCompatActivity;
 

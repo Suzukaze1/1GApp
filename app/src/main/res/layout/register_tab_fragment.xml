@@ -20,24 +20,22 @@
         android:id="@+id/til01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/nama_lengkap"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintVertical_bias=".05"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_register">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/register_full_name"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:paddingTop="10dp"
             android:inputType="textEmailAddress"
-            android:hint="@string/nama_lengkap"
-            android:paddingLeft="20dp"
-            android:background="@drawable/edit_text_bg"
-            android:paddingBottom="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -45,22 +43,23 @@
         android:id="@+id/til02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/transparent"
+        app:boxStrokeWidth="0dp"
         app:layout_constraintVertical_bias=".05"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til01">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/register_email"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
             android:paddingTop="10dp"
             android:inputType="textEmailAddress"
             android:hint="@string/email"
-            android:paddingLeft="20dp"
-            android:background="@drawable/edit_text_bg"
-            android:paddingBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -77,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/til02"
         app:passwordToggleEnabled="true">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/register_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +102,7 @@
         app:layout_constraintTop_toBottomOf="@+id/til03"
         app:passwordToggleEnabled="true">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/register_verification_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

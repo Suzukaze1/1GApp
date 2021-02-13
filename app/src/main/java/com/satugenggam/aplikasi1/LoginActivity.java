@@ -37,15 +37,14 @@ public class LoginActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
-        fl01.setTranslationY(300);
+        /*fl01.setTranslationY(300);
         fl01.setAlpha(0);
-        fl01.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(800).start();
+        fl01.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(800).start();*/
 
         tabLayout.post(new Runnable() {
             @Override
             public void run() {
                 indicatorWidth = tabLayout.getWidth() / tabLayout.getTabCount();
-
                 FrameLayout.LayoutParams indicatorParams = (FrameLayout.LayoutParams) mIndicator.getLayoutParams();
                 indicatorParams.width = indicatorWidth;
                 mIndicator.setLayoutParams(indicatorParams);

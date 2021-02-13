@@ -26,7 +26,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_login">
 
-        <EditText
+
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/login_email"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
@@ -52,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/til01"
         app:passwordToggleEnabled="true">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/login_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
