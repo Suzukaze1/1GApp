@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.satugenggam.aplikasi1.ui.viewmodel.RegisterViewModel;
 
@@ -22,7 +23,7 @@ import java.util.Objects;
 public class RegisterTabFragment extends Fragment {
 
     RegisterViewModel registerViewModel;
-    EditText namalengkap,email,password,konfirmasi_password;
+    TextInputEditText namalengkap,email,password,konfirmasi_password;
     TextInputLayout til01,til02,til03,til04;
     Button btndaftar;
     ImageView iv02;
@@ -44,7 +45,7 @@ public class RegisterTabFragment extends Fragment {
         til03 = root.findViewById(R.id.til03);
         til04 = root.findViewById(R.id.til04);
 
-        namalengkap.setTranslationY(300);
+        /*namalengkap.setTranslationY(300);
         email.setTranslationY(300);
         password.setTranslationY(300);
         konfirmasi_password.setTranslationY(300);
@@ -76,7 +77,7 @@ public class RegisterTabFragment extends Fragment {
         konfirmasi_password.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(400).start();
         btndaftar.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(700).start();
 
-
+*/
 
         return root;
     }

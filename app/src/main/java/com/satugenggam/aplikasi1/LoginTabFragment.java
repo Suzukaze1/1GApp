@@ -39,7 +39,7 @@ public class LoginTabFragment extends Fragment {
         forgetpass = root.findViewById(R.id.tv_lupa_password);
         btnlogin = root.findViewById(R.id.btn_login);
 
-        email.setTranslationY(300);
+        /*email.setTranslationY(300);
         pass.setTranslationY(300);
         iv01.setTranslationY(300);
         forgetpass.setTranslationY(300);
@@ -54,7 +54,7 @@ public class LoginTabFragment extends Fragment {
         email.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(300).start();
         pass.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(500).start();
         forgetpass.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(500).start();
-        btnlogin.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(700).start();
+        btnlogin.animate().translationY(0).alpha(1).setDuration(800).setStartDelay(700).start();*/
 
         return root;
     }

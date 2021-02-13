@@ -1,4 +1,4 @@
-package com.satugenggam.aplikasi1.ui.viewmodel.view.dashboard;
+package com.satugenggam.aplikasi1.ui.view.dashboard;
 
 import androidx.appcompat.app.AppCompatActivity;
 
