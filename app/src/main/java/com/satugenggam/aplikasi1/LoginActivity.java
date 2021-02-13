@@ -24,7 +24,10 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        setupUI();
+    }
 
+    private void setupUI() {
         Objects.requireNonNull(getSupportActionBar()).hide();
 
         tabLayout = findViewById(R.id.tab_layout);

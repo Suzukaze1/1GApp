@@ -1,8 +1,8 @@
 package com.satugenggam.aplikasi1.pref
 
 import android.content.Context
+import android.content.SharedPreferences
 import com.satugenggam.aplikasi1.data.model.LoginResponse
-import com.satugenggam.aplikasi1.data.model.UserLoginResponse
 
 internal class SessionPreference(context: Context) {
     companion object {
@@ -42,9 +42,18 @@ internal class SessionPreference(context: Context) {
         loginResponseModel.expiresIn = sessionPreference.getInt(EXPIRES_IN, 0)
         loginResponseModel.userLoginResponse?.name = sessionPreference.getString(NAME, "")
         loginResponseModel.userLoginResponse?.email = sessionPreference.getString(EMAIL, "")
-        loginResponseModel.userLoginResponse?.activeStatus = sessionPreference.getString(ACTIVE_STATUS, "")
-        loginResponseModel.userLoginResponse?.tokoId = sessionPreference.getString(TOKO_ID,"")
+        loginResponseModel.userLoginResponse?.activeStatus = sessionPreference.getString(
+            ACTIVE_STATUS,
+            ""
+        )
+        loginResponseModel.userLoginResponse?.tokoId = sessionPreference.getString(TOKO_ID, "")
         loginResponseModel.userLoginResponse?.tipe = sessionPreference.getString(TYPE, "")
         return loginResponseModel
+    }
+
+    fun logoutUser(){
+        val editor = sessionPreference.edit()
+        editor?.clear()
+        editor.apply()
     }
 }
