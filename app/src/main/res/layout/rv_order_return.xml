@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/edit_text_bg"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Nama Pembeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_name_buyer"
+        android:layout_marginTop="3dp"
+        android:text="Fatimah Almira"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_below="@+id/tv_name"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:text="Alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_address_user"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:text="Jalan Garuda Sakti Panam, Pekanbaru"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="5dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/view01"
+        android:layout_below="@+id/tv_address_user"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_below="@+id/view01"
+        android:layout_marginTop="5dp"
+        android:textColor="#FA1100"
+        android:text="Dikembalikan Karena Barang Rusak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

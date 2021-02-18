@@ -4,24 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.view.order.OrderActivity">
+    tools:context=".ui.view.order.OrderProsesFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout_order"
-            app:tabIndicatorHeight="5dp"
-            app:tabTextColor="@color/primary_color"
-            app:tabMode="scrollable"
-            android:layout_marginTop="10dp"
+        <TextView
+            android:id="@+id/tv_pilih"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#929292"
+            android:text="Pilih"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/view_pager_order"
-            android:layout_below="@+id/tab_layout_order"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_order_in"
+            android:layout_below="@+id/tv_pilih"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/rv_order_confirmation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
