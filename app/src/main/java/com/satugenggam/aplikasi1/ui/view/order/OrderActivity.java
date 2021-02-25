@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.Menu;
 
 import com.google.android.material.tabs.TabLayout;
 import com.satugenggam.aplikasi1.LoginAdapter;
@@ -22,9 +23,15 @@ public class OrderActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tab_layout_order);
         viewPager = findViewById(R.id.view_pager_order);
 
-        viewPager.setOffscreenPageLimit(2);
+        viewPager.setOffscreenPageLimit(7);
         OrderPagerFragment adapter = new OrderPagerFragment(this, getSupportFragmentManager());
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.shop_menu, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }

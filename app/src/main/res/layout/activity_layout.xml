@@ -17,9 +17,11 @@
         <include layout="@layout/drawer_header" />
 
         <include layout="@layout/drawer_body"
+            android:id="@+id/drawable_is_login"
             android:visibility="visible"/>
 
         <include layout="@layout/drawer_no_login"
+            android:id="@+id/drawable_is_not_login"
             android:visibility="gone"/>
     </LinearLayout>
 
