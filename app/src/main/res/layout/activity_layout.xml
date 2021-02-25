@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start|top"
+    android:background="#E5E5E5"
+    app:itemTextColor="@android:color/white"
+    tools:context=".ui.view.dashboard.LayoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/drawer_header" />
+
+        <include layout="@layout/drawer_body"
+            android:id="@+id/drawable_is_login"
+            android:visibility="visible"/>
+
+        <include layout="@layout/drawer_no_login"
+            android:id="@+id/drawable_is_not_login"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</com.google.android.material.navigation.NavigationView>
