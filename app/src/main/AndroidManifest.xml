@@ -12,14 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.view.dashboard.LayoutActivity"></activity>
-        <activity android:name=".ui.view.settings.SettingsActivity" />
-        <activity android:name=".ui.view.order.OrderActivity">
+        <activity android:name=".ui.view.dashboard.LayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".ui.view.settings.SettingsActivity" />
+        <activity android:name=".ui.view.order.OrderActivity">
+
         </activity>
         <activity android:name=".ui.view.profil.ShopChangePasswordActivity" />
         <activity android:name=".ui.view.profil.ShopEditActivity" />

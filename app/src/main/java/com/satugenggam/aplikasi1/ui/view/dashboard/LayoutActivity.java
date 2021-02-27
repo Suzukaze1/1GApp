@@ -8,14 +8,14 @@ import android.os.Bundle;
 import com.satugenggam.aplikasi1.R;
 import com.satugenggam.aplikasi1.ui.viewmodel.DashboardViewModel;
 
-public class DashboardActivity extends AppCompatActivity {
+public class LayoutActivity extends AppCompatActivity {
 
     DashboardViewModel dashboardViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_layout);
         setupUI();
         setupViewModel();
         setupObserve();
