@@ -11,7 +11,7 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout_order"
+            android:id="@+id/tab_layout_order1"
             app:tabIndicatorHeight="5dp"
             app:tabTextColor="@color/primary_color"
             app:tabMode="scrollable"
@@ -20,8 +20,8 @@
             android:layout_height="wrap_content"/>
 
         <androidx.viewpager.widget.ViewPager
-            android:id="@+id/view_pager_order"
-            android:layout_below="@+id/tab_layout_order"
+            android:id="@+id/view_pager_order1"
+            android:layout_below="@+id/tab_layout_order1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </RelativeLayout>
