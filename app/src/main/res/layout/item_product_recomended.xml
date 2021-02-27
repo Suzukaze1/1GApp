@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rv_bg_product_rec"
+    android:layout_marginBottom="20dp"
+    android:layout_width="150dp"
+    android:layout_height="180dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_image01"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_bg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title_product_rec"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/iv_image01"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:text="Lipstik Nude"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_price_product_rec"
+        android:layout_below="@+id/tv_title_product_rec"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:text="Rp. 37.500/pcs"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_centerHorizontal="true"
+        android:textSize="9sp"
+        android:layout_below="@+id/tv_price_product_rec"
+        android:textColor="@color/black"
+        android:text="Stok : 20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

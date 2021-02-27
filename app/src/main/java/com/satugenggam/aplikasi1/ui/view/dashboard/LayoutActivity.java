@@ -17,16 +17,20 @@ import android.widget.Button;
 
 import com.google.android.material.navigation.NavigationView;
 import com.satugenggam.aplikasi1.R;
+import com.satugenggam.aplikasi1.ui.view.category.CategoryFragment;
 import com.satugenggam.aplikasi1.ui.view.order.BlankFragment;
 import com.satugenggam.aplikasi1.ui.view.order.OrderActivity;
 import com.satugenggam.aplikasi1.ui.view.order.OrderFragment;
+import com.satugenggam.aplikasi1.ui.view.product.ProductFragment;
+import com.satugenggam.aplikasi1.ui.view.profil.ProfilFragment;
+import com.satugenggam.aplikasi1.ui.view.settings.SettingsFragment;
 
 public class LayoutActivity extends AppCompatActivity {
 
     private Fragment fragment = new DashboardFragment();
     ActionBarDrawerToggle mDrawableToggle;
     DrawerLayout mDrawerLayout;
-    Button btnOrder, btnDashboard;
+    Button btnOrder, btnDashboard, btnSetting, btnProfil, btnProduk, btnKategori;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +39,11 @@ public class LayoutActivity extends AppCompatActivity {
 
         mDrawerLayout = findViewById(R.id.drawer_layout01);
         btnDashboard = findViewById(R.id.btn_beranda);
+        btnProfil = findViewById(R.id.btn_profil);
+        btnKategori = findViewById(R.id.btn_kategori);
+        btnProduk = findViewById(R.id.btn_produk);
         btnOrder = findViewById(R.id.btn_pesanan);
+        btnSetting = findViewById(R.id.btn_pengaturan);
 
         mDrawableToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawerOpen, R.string.drawerClose);
 
@@ -50,11 +58,47 @@ public class LayoutActivity extends AppCompatActivity {
             }
         });
 
+        btnProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDrawerLayout.closeDrawers();
+                Fragment fragment = new ProfilFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container1, fragment).commit();
+            }
+        });
+
+        btnProduk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDrawerLayout.closeDrawers();
+                Fragment fragment = new ProductFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container1, fragment).commit();
+            }
+        });
+
+        btnKategori.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDrawerLayout.closeDrawers();
+                Fragment fragment = new CategoryFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container1, fragment).commit();
+            }
+        });
+
         btnOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mDrawerLayout.closeDrawers();
                 Fragment fragment = new OrderFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container1, fragment).commit();
+            }
+        });
+
+        btnSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDrawerLayout.closeDrawers();
+                Fragment fragment = new SettingsFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container1, fragment).commit();
             }
         });

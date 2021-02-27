@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ui.view.product.ProductFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_search_product"
+            android:textSize="14sp"
+            android:hint="Cari Berdasarkan Nama Kategori"
+            android:drawableStart="@drawable/ic_search"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_recomended_product"
+            android:layout_below="@+id/et_search_product"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:text="Produk Unggulan"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_recomended_product"
+            android:layout_below="@+id/tv_recomended_product"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_below="@+id/rv_recomended_product"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="Produk Toko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
