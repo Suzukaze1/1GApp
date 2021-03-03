@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/login_bg"
+        android:layout_width="214dp"
+        android:layout_height="214dp"
+        android:background="@drawable/icon_loginn"
         app:layout_constraintVertical_bias=".09"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,23 +20,19 @@
         android:id="@+id/til01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/email"
         app:layout_constraintVertical_bias=".09"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_login">
 
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/login_email"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:paddingTop="10dp"
             android:inputType="textEmailAddress"
-            android:paddingLeft="20dp"
-            android:hint="@string/email"
-            android:background="@drawable/edit_text_bg"
-            android:paddingBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -46,6 +42,10 @@
         android:id="@+id/til02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/password"
         app:layout_constraintVertical_bias=".05"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,18 +57,11 @@
             android:id="@+id/login_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/edit_text_bg"
-            android:inputType="textPassword"
-            android:paddingLeft="20dp"
-            android:hint="@string/password"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_lupa_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,7 +74,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til02" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

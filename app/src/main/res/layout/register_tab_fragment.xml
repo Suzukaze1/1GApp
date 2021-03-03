@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/register_bg"
+        android:layout_width="214dp"
+        android:layout_height="214dp"
+        android:background="@drawable/icon_registerr"
         app:layout_constraintVertical_bias=".09"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,8 +34,7 @@
             android:id="@+id/register_full_name"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -43,12 +42,10 @@
         android:id="@+id/til02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edit_text_bg"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/email"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:boxStrokeColor="@color/transparent"
-        app:boxStrokeWidth="0dp"
         app:layout_constraintVertical_bias=".05"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,9 +54,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/register_email"
-            android:paddingTop="10dp"
             android:inputType="textEmailAddress"
-            android:hint="@string/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -69,6 +64,10 @@
         android:id="@+id/til03"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintVertical_bias=".05"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,14 +79,7 @@
             android:id="@+id/register_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/edit_text_bg"
-            android:inputType="textPassword"
-            android:hint="@string/password"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -95,6 +87,10 @@
         android:id="@+id/til04"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/konfirmasi_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         app:layout_constraintVertical_bias=".05"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,18 +102,11 @@
             android:id="@+id/register_verification_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/edit_text_bg"
-            android:inputType="textPassword"
-            android:hint="@string/konfirmasi_password"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
