@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
@@ -36,8 +37,9 @@ public class LayoutActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 OrderFragment fragment = new OrderFragment();
+                FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container, fragment, "Fragment_TAG");
+                fragmentTransaction.add(R.id.fragment_container, fragment);
                 fragmentTransaction.commit();
             }
         });
